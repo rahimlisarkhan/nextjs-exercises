@@ -1,6 +1,7 @@
-# Task 1 - Create a Component in Next.js.
+# Task 2 - Data fetching with SSR..
 
 ## Description:
 
-- Create a component called About.js
-- Call the component you created in page.js on the home page.
+- Create a page that fetches data from an API and renders it using SSR.
+- Use the `JSONPlaceholder` API as an example.
+- Use https://jsonplaceholder.typicode.com/posts

@@ -1,9 +1,16 @@
-import About from './About'
+import React from 'react'
 
-export default function Home () {
+const page = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const data = await res.json()
+ 
   return (
     <div>
-      <About />
+      {data?.map(el => (
+        <span>{el.title}</span>
+      ))}
     </div>
   )
 }
+
+export default page
