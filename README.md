@@ -1,8 +1,8 @@
-# Task 2 - Data fetching with SSR..
+# Task 2 - Fetch and Display Posts Using Server-Side Data Fetching with Next.js App Router
 
 ## Objective:
 
-- Create a Next.js app that fetches and displays user data from an API using server components, styles with CSS modules, and optimizes images with next/image.
+- Create a Next.js app that fetches posts from a placeholder API using the App Router, and displays the data with server-side rendering. The app will use Next.js CSS Modules for styling.
 
 ### 📂 SCREEN
 
