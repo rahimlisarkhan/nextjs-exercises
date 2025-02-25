@@ -1,23 +1,18 @@
 // app/page.js
 
-import React from 'react';
 import Link from 'next/link';
 
-// Home page with album links
 export default async function HomePage() {
-  // Fetch the list of albums from the API to show on the Home page
-  const albumsResponse = await fetch(
-    'https://jsonplaceholder.typicode.com/albums'
-  );
-  const albums = await albumsResponse.json();
+  const postsResponse = await fetch('https://blog-api-t6u0.onrender.com/posts');
+  const posts = await postsResponse.json();
 
   return (
     <div>
-      <h1>Home Page - Click on an Album</h1>
+      <h2>Latest Posts</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {albums.map((album) => (
+        {posts.map((post) => (
           <div
-            key={album.id}
+            key={post.id}
             style={{
               border: '1px solid #ddd',
               padding: '10px',
@@ -25,21 +20,33 @@ export default async function HomePage() {
               width: '200px',
             }}
           >
-            <h3>{album.title}</h3>
-            <Link href={`/albums/${album.id}`}>
+            <h3>{post.title}</h3>
+            <Link href={`/posts/${post.id}`}>
               <button
                 style={{
-                  backgroundColor: 'red',
+                  backgroundColor: '#007bff',
                   color: 'white',
                   padding: '10px',
                 }}
               >
-                View Album
+                View Post
               </button>
             </Link>
           </div>
         ))}
       </div>
+      <Link href="/create">
+        <button
+          style={{
+            backgroundColor: '#28a745',
+            color: 'white',
+            padding: '10px',
+            marginTop: '20px',
+          }}
+        >
+          Create New Post
+        </button>
+      </Link>
     </div>
   );
 }

@@ -1,26 +1,31 @@
-/* styles/globals.css */
-
+/* Global styles for the app */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f4f4f4;
 }
 
-main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 2.5rem;
+h1,
+h2,
+h3 {
   color: #333;
-  text-align: center;
 }
 
-.postList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
 }

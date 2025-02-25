@@ -1,8 +1,9 @@
-# Task 3 - To use a local image and url image, import your .jpg, .png, or .webp image files from your public folder.
+# Task 3 - Homework: Build a Blog App with Real API (CRUD)
 
 ## Objective:
 
-- Create a Next.js app that fetches posts from a placeholder API using the App Router, and displays the data with server-side rendering. The app will use Next.js CSS Modules for styling.
+- Fetches posts from the provided API (https://blog-api-t6u0.onrender.com/posts).
+- Allows the user to create, view, update, and delete blog posts.
 
 ### 📂 HOME
 
