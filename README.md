@@ -1,7 +1,5 @@
-# Task 2 - Data fetching with SSR..
+# Task 3 - To use a local image and url image, import your .jpg, .png, or .webp image files from your public folder.
 
 ## Description:
 
-- Create a page that fetches data from an API and renders it using SSR.
-- Use the `JSONPlaceholder` API as an example.
-- Use https://jsonplaceholder.typicode.com/posts
+- Use next/image

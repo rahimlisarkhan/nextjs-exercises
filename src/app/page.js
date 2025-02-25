@@ -1,16 +1,11 @@
-import React from 'react'
+import React from 'react';
+import vercel from '@/../public/vercel.svg';
+import Image from 'next/image';
 
-const page = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-  const data = await res.json()
- 
+export default function Home() {
   return (
     <div>
-      {data?.map(el => (
-        <span>{el.title}</span>
-      ))}
+      <Image src={vercel} alt="vercel" />
     </div>
-  )
+  );
 }
-
-export default page
