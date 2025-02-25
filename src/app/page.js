@@ -1,16 +1,12 @@
-import React from 'react'
+import Link from 'next/link';
 
-const page = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-  const data = await res.json()
- 
+export default async function HomePage() {
   return (
-    <div>
-      {data?.map(el => (
-        <span>{el.title}</span>
-      ))}
-    </div>
-  )
+    <main>
+      <h1 className="title">
+        HOME
+        <Link href="/posts">Click -POSTS</Link>
+      </h1>
+    </main>
+  );
 }
-
-export default page

@@ -1,7 +1,9 @@
 # Task 2 - Data fetching with SSR..
 
-## Description:
+## Objective:
 
-- Create a page that fetches data from an API and renders it using SSR.
-- Use the `JSONPlaceholder` API as an example.
-- Use https://jsonplaceholder.typicode.com/posts
+- Create a Next.js app that fetches and displays user data from an API using server components, styles with CSS modules, and optimizes images with next/image.
+
+### 📂 SCREEN
+
+![Profile Card UI](./screen.png)
