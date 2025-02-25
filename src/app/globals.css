@@ -1,42 +1,26 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+/* styles/globals.css */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.postList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
