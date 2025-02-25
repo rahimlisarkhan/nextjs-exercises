@@ -1,6 +1,13 @@
-# Task 1 - Create a Component in Next.js.
+# Task 1 - Create a Next.js App with App Router, Styling, and Server Data Fetching
 
-## Description:
+## Objective:
 
-- Create a component called About.js
-- Call the component you created in page.js on the home page.
+- Create a Next.js app that fetches and displays user data from an API using server components, styles with CSS modules, and optimizes images with next/image.
+
+### 📂 SCREEN
+
+![Profile Card UI](./screen.png)
+
+### 📂 SCREEN 2 SRR RENDER
+
+![Profile Card UI](./screen2.png)
